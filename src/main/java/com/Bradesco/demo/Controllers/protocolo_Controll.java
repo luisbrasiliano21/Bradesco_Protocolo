@@ -1,5 +1,4 @@
-package Controllers;
-
+package com.Bradesco.demo.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Bradesco.demo.entity.Consulta_Protocolo;
 
-import Repository.Protocolo_repository;
+import com.Bradesco.demo.Repository.Protocolo_repository;
+
 
 @RestController
 @RequestMapping(value="/Protocolos")
-public class protocolo_Controller {
+public class protocolo_Controll {
+	
 	@Autowired
 	private Protocolo_repository repository;
 
@@ -29,5 +30,4 @@ public class protocolo_Controller {
 		Consulta_Protocolo result = repository.findById(id).get();
 		return result;
  	}
-	
 }

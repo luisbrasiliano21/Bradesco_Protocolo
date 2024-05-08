@@ -17,14 +17,13 @@ import jakarta.persistence.Table;
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long id;
 		private String tipoProtocolo;
-		/*private Long numeroProtocolo; 
+		private Long numeroProtocolo; 
 	    private LocalDate dataAbertura;
-	   
 	    private String statusProtocolo;
 	    private String descricaoProtocolo;
 	    private String resposta;
 	    private LocalDate prazoTratativa;
-	    private String canal;*/
+	    private String canal;
 
 	    public Consulta_Protocolo() {
 	    	
@@ -44,7 +43,7 @@ import jakarta.persistence.Table;
 		public void setTipoProtocolo(String tipoProtocolo) {
 			this.tipoProtocolo = tipoProtocolo;
 		}
-/*
+
 		public Long getNumeroProtocolo() {
 			return numeroProtocolo;
 		}
@@ -103,7 +102,7 @@ import jakarta.persistence.Table;
 			this.canal = canal;
 		}
 		
-	*/	
+	
 }
 
 
