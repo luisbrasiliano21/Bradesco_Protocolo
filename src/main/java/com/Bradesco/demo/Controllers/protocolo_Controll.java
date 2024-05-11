@@ -29,4 +29,14 @@ public class protocolo_Controll {
 		Consulta_Protocolo result = repository.findByNumeroProtocolo(numeroProtocolo);
 		return result;
 	}
-}
+
+	@GetMapping("/protocolo/search")
+	public ResponseEntity<?> searchProtocolo(@RequestParam("numero") Long numeroProtocolo) {
+		Consulta_Protocolo protocolo = repository.findByNumeroProtocolo(numeroProtocolo);
+
+		if (protocolo != null) {
+			return ResponseEntity.ok(protocolo);
+		} else {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Protocolo não encontrado");
+		}
+	}
