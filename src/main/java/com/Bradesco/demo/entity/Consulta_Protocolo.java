@@ -25,54 +25,10 @@ public class Consulta_Protocolo {
 	@Getter @Setter private LocalDate prazoTratativa;
 	@Getter @Setter private String canal;
 
-	    public Consulta_Protocolo() {
-	    	
-	    }
+	public Consulta_Protocolo() {
 
-		public Long getId() {
-			return id;
-		}
-
-		public void setId(Long id) {
-			this.id = id;
-		}
-		public String getTipoProtocolo() {
-			return tipoProtocolo;
-		}
-
-		public void setTipoProtocolo(String tipoProtocolo) {
-			this.tipoProtocolo = tipoProtocolo;
-		}
-
-		public Long getNumeroProtocolo() {
-			return numeroProtocolo;
-		}
-
-		public void setNumeroProtocolo(Long numeroProtocolo) {
-			this.numeroProtocolo = numeroProtocolo;
-		}
-
-		public LocalDate getDataAbertura() {
-			return dataAbertura;
-		}
-		
-		public void setDataAbertura(LocalDate dataAbertura) {
-			this.dataAbertura = dataAbertura;
-		}
-
-		
-
-		public String getStatusProtocolo() {
-			return statusProtocolo;
-		}
-
-		public void setStatusProtocolo(String statusProtocolo) {
-			this.statusProtocolo = statusProtocolo;
-		}
-
-		public String getDescricaoProtocolo() {
-			return descricaoProtocolo;
-		}
+	}
+}
 
 		public void setDescricaoProtocolo(String descricaoProtocolo) {
 			this.descricaoProtocolo = descricaoProtocolo;
