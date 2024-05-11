@@ -19,7 +19,7 @@ public class protocolo_Controll {
 	private Protocolo_repository repository;
 
 	@GetMapping
-	public List<Consulta_Protocolo> Resposta(){
+	public List<Consulta_Protocolo> Resposta() {
 		List<Consulta_Protocolo> Protocolos = repository.findAll();
 		return Protocolos;
 	}
