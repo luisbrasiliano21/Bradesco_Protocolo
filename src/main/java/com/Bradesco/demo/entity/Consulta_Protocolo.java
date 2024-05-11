@@ -9,21 +9,21 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 
-	@Entity
-	@Table(name = "tb_Protocolo")
-	public class Consulta_Protocolo {
-		
-		@Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Long id;
-		private String tipoProtocolo;
-		private Long numeroProtocolo; 
-	    private LocalDate dataAbertura;
-	    private String statusProtocolo;
-	    private String descricaoProtocolo;
-	    private String resposta;
-	    private LocalDate prazoTratativa;
-	    private String canal;
+@Entity
+@Table(name = "tb_Protocolo")
+public class Consulta_Protocolo {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Getter @Setter private String tipoProtocolo;
+	@Getter @Setter private Long numeroProtocolo;
+	@Getter @Setter private LocalDate dataAbertura;
+	@Getter @Setter private String statusProtocolo;
+	@Getter @Setter private String descricaoProtocolo;
+	@Getter @Setter private String resposta;
+	@Getter @Setter private LocalDate prazoTratativa;
+	@Getter @Setter private String canal;
 
 	    public Consulta_Protocolo() {
 	    	
